@@ -76,7 +76,7 @@ while True:
 
   if len(parts) != 4 or parts[1] != 'SHARES' or parts[2] != 'OF':
     sys.exit('ERROR: Parsing input line %d: %s' % (input_line+1, lines[input_line]))
-  quantity = int(parts[0].split('.')[0])
+  quantity = float(parts[0])
   symbol = parts[3]
   if (symbol != 'GOOG' and symbol != 'GOOGL') or quantity <= 0:
     sys.exit('ERROR: Parsing input line %d: %s' % (input_line+1, lines[input_line]))
