@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Convert Schwab EAC 1099 PDF to TurboTax TXF and CSV format. No need to copy-paste."""
 
-# TXF spec: http://turbotax.intuit.com/txf/TXF042.jsp
+# TXF spec: https://taxdataexchange.org/docs/txf/v042/txf-spec.html
 
 import csv
 import re
